@@ -17,6 +17,8 @@ function changeColor() {
   startBtn.setAttribute('disabled', 'disabled');
   stopBtn.removeAttribute('disabled');
 
+  bodyElement.style.backgroundColor = getRandomHexColor();
+
   timerId = setInterval(() => {
     bodyElement.style.backgroundColor = getRandomHexColor();
   }, 1000);
