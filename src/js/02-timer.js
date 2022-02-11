@@ -61,6 +61,7 @@ function convertMs(ms) {
 }
 
 function countdownTimer() {
+  refs.startBtn.disabled = true;
   intervalId = setInterval(() => {
     const currentDate = new Date();
     const dateDifference = chosenDate - currentDate;
